@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         AppUpdater appUpdater = new AppUpdater(this);
-        appUpdater.setUpdateFrom(UpdateFrom.GITHUB).setGitHubUserAndRepo("adrian-lewkowicz",)
+        appUpdater.setUpdateFrom(UpdateFrom.GITHUB).setGitHubUserAndRepo("adrian-lewkowicz","TestApp");
         appUpdater.start();
-        appUpdater.setDisplay(Display.DIALOG);
+       // appUpdater.setDisplay(Display.DIALOG);
     }
 }
